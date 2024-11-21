@@ -1,0 +1,31 @@
+.sobre__corpo{
+    background-image: none;
+    
+}
+.produtos__corpo{
+    background-image: none; 
+}
+.empresa {
+    background-color: var(--cor-secundaria);
+    font-family: var(--font-secundaria);
+    padding: 0 900px 200px 200px; 
+}
+.titulo1 {
+    font-weight: 700;
+    font-size: 50px;
+}
+.texto1 {
+    font-weight: 500;
+    font-size: 18px;
+    margin: 2em 0 0 0;
+
+}
+.sobre__produtos {
+    background-color: var(--cor-primaria);
+    font-family: var(--font-secundaria);
+    color: var(--cor-secundaria);
+    padding: 150px 200px 150px 900px; 
+}
+.sobre__confiabilidade {
+    padding: 150px 900px 150px 200px; 
+}

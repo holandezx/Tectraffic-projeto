@@ -1,0 +1,19 @@
+.produtos__section {
+    background-color: var(--cor-primaria);
+}
+.Produtos__produtos {
+    background-color: var(--cor-secundaria);
+    display: flex;
+    flex-wrap: wrap;
+}
+.Produtos__produtos__ancora {
+    text-decoration: none;
+    padding: 3em;
+}
+.Produtos__produtos__texto {
+    font-family: var(--font-secundaria);
+    color: var(--cor-primaria);
+    font-weight: 400;
+    font-size: 24px;
+    text-align: center;
+}
