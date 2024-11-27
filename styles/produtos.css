@@ -5,10 +5,11 @@
     background-color: var(--cor-secundaria);
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
 }
 .Produtos__produtos__ancora {
     text-decoration: none;
-    padding: 3em;
+    padding: 8em;
 }
 .Produtos__produtos__texto {
     font-family: var(--font-secundaria);
