@@ -8,6 +8,9 @@
     margin: 0 210px 0 210px;
     padding: 0 0 150px 0;
 }
+.Logo {
+    max-width: 15%;
+}
 .Titulo {
     font-family: var(--font-primaria);
     font-weight: 700;
@@ -124,10 +127,13 @@
 .Sobre {
     background-color: var(--cor-secundaria);
     color: var(--cor-primaria);
-    padding: 4em 57em 4em 8em;
+    padding: 4em 0em 4em 8em;
+    display: flex;
+    align-items: center;
 }
 .Sobre__texto {
     font-family: var(--font-primaria);
+    margin: 0 40em 0 0;
 }
 .sobre__texto__topicos__paragrafo {
     font-family: var(--font-secundaria);
@@ -145,4 +151,7 @@
     padding: 1em;
     border-radius: 30px;
     color: var(--cor-primaria);
+}
+.imagem__sobre__home{
+    max-width: 50%;
 }
