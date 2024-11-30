@@ -1,31 +1,52 @@
 .sobre__corpo{
     background-image: none;
-    
 }
-.produtos__corpo{
-    background-image: none; 
-}
-.empresa {
-    background-color: var(--cor-secundaria);
-    font-family: var(--font-secundaria);
-    padding: 0 900px 200px 200px; 
+.sobre__pagina {
+    display: flex;
+    flex-direction: column;
 }
 .titulo1 {
+    font-family: var(--font-primaria);
     font-weight: 700;
     font-size: 50px;
 }
 .texto1 {
-    font-weight: 500;
+    font-weight: 400;
+    font-family: var(--font-primaria);
     font-size: 18px;
-    margin: 2em 0 0 0;
-
+}
+.empresa {
+    color: var(--cor-primaria);
+    display: flex;
+    background-color: var(--cor-secundaria);
+    justify-content: center;
+    padding: 0 0 3em 0;
+}
+.empresa2 {
+    align-items: center;
+    flex-direction: column;
+    margin: 1em 13em 1em 5em;
+}
+.imagem_sobre_sobre {
+    max-width: 35%;
+    align-self: flex-end;
+    padding: 0 5em 0 0;
+}
+.confiabilidade__sobre{
+    padding: 5em 0 0 0;
 }
 .sobre__produtos {
+    display: flex;
     background-color: var(--cor-primaria);
-    font-family: var(--font-secundaria);
     color: var(--cor-secundaria);
-    padding: 150px 200px 150px 900px; 
+    padding: 5em;
+
 }
-.sobre__confiabilidade {
-    padding: 150px 900px 150px 200px; 
+.sobre__produtos2 {
+    align-items: center;
+    flex-direction: column;
+    margin: 5em 5em 5em 13em;
+}
+.imagem_sobre_produto {
+    padding: 0 0 0 5em;
 }
