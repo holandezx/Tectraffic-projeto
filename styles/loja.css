@@ -47,12 +47,29 @@
     font-family: var(--font-primaria);
     font-weight: 700;
     font-size: 50px;
-    padding: 133px 720px 63px 80px;
+    padding: 0 0 2em 0;
     color: var(--cor-secundaria);
 }
 .loja__Especificações {
     background-color: var(--cor-primaria);
+    padding: 10em;
 }
-.Especificações__imagem {
-    padding: 0 25em 5em 25em
+.tabela {
+    border: 2px solid var(--cor-secundaria);
+    width: 100%;
+    border-collapse: collapse;
+}
+.linha__informação {
+    border: 2px solid var(--cor-secundaria);
+    color: var(--cor-secundaria);
+    font-family: var(--font-primaria);
+    font-size: 20px;
+    padding: 0.5em;
+}
+.linha__conteudo {
+    border: 2px solid var(--cor-secundaria);
+    color: var(--cor-secundaria);
+    font-family: var(--font-secundaria);
+    font-size: 20px;
+    padding: 0.5em;
 }
