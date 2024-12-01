@@ -177,6 +177,30 @@
 .imagem_sobre_home {
     max-width: 40%;
 }
+.footer {
+	background-color: #333;
+	color: #fff;
+	padding: 20px;
+	text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 @media (max-width: 1024px) {
     .corpo {
         margin: 0 100px;
