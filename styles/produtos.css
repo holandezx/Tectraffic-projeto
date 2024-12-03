@@ -25,3 +25,6 @@
     border-radius: 10px;
     max-width: 200%;
 }
+.Produtos_home_ancora_site:hover {
+    transform: scale(1.1);
+}

@@ -1,4 +1,4 @@
-.sobre__corpo{
+.sobre__corpo {
     background-image: none;
 }
 .sobre__pagina {
@@ -8,13 +8,13 @@
 .titulo1 {
     font-family: var(--font-primaria);
     font-weight: 700;
-    font-size: 50px;
+    font-size: 3.125rem; /* 50px */
     padding: 0 0 1em 0;
 }
 .texto1 {
     font-weight: 400;
     font-family: var(--font-primaria);
-    font-size: 18px;
+    font-size: 1.125rem; /* 18px */
 }
 .empresa {
     color: var(--cor-primaria);
@@ -33,15 +33,14 @@
     align-self: flex-end;
     padding: 0 5em 0 0;
 }
-.confiabilidade__sobre{
+.confiabilidade__sobre {
     padding: 5em 0 0 0;
 }
 .sobre__produtos {
     display: flex;
     background-color: var(--cor-primaria);
     color: var(--cor-secundaria);
-    padding: 5em;
-
+    padding: 5em; /* 5em já está em rem, sem conversão */
 }
 .sobre__produtos2 {
     align-items: center;

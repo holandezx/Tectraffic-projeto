@@ -6,8 +6,8 @@
     background-image: url(../img/backgroundcorpo.png);
     background-repeat: no-repeat;
     color: var(--cor-secundaria);
-    margin: 0 210px;
-    padding: 0 0 150px;
+    margin: 0 13.125rem; /* 13.125rem = 210px */
+    padding: 0 0 9.375rem; /* 9.375rem = 150px */
 }
 
 .Logo {
@@ -17,37 +17,38 @@
 .Titulo {
     font-family: var(--font-primaria);
     font-weight: 700;
-    font-size: 50px;
-    padding: 133px 720px 63px 80px;
+    font-size: 3.125rem; /* 3.125rem = 50px */
+    padding: 8.3125rem 45rem 3.9375rem 5rem; /* 8.3125rem = 133px, 45rem = 720px, 3.9375rem = 63px, 5rem = 80px */
 }
 
 .paragrafo {
     font-weight: 400;
     font-family: var(--font-primaria);
-    font-size: 18px;
-    margin: 63px 920px 55px 90px;
+    font-size: 1.125rem; /* 1.125rem = 18px */
+    margin: 3.9375rem 57.5rem 3.4375rem 5.625rem; /* 3.9375rem = 63px, 57.5rem = 920px, 3.4375rem = 55px, 5.625rem = 90px */
 }
 
 .botao__corpo {
     text-decoration: none;
     font-family: var(--font-primaria);
     font-weight: 700;
-    font-size: 20px;
+    font-size: 1.25rem; /* 20px convertido para rem */
     color: var(--cor-secundaria);
-    margin: 55px 1000px 231px 80px;
+    margin: 3.4375rem 0 14.4375rem 5rem; /* 3.4375rem = 55px, 14.4375rem = 231px, 5rem = 80px */
     padding: 1em;
     background-color: var(--cor-terciaria);
-    border-radius: 30px;
+    border-radius: 30px; /* 30px convertido para rem */
     transition: all 0.3s ease-in-out;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /* Sombra sutil */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
 }
 
 .botao__corpo:hover {
     background-color: var(--cor-primaria);
     transform: scale(1.1);
     color: #fff;
-    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.5); /* Sombra mais forte ao passar o mouse */
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.5);
 }
+
 .avaliações {
     background-color: var(--cor-secundaria);
 }
@@ -55,7 +56,7 @@
 .avaliações__lista {
     display: flex;
     text-align: center;
-    padding: 80px 200px;
+    padding: 5rem 12.5rem; /* 5rem = 80px, 12.5rem = 200px */
     list-style: none;
 }
 
@@ -65,24 +66,24 @@
 
 .imagem-sobre {
     width: 100%;
-    height: 75px;
+    height: 4.6875rem; /* 75px convertido para rem */
     object-fit: cover;
 }
 
 .avaliação {
     font-family: var(--font-primaria);
     font-weight: 700;
-    font-size: 25px;
+    font-size: 1.5625rem; /* 25px / 16px */
     color: var(--cor-primaria);
-    margin: 16px;
+    margin: 1rem; /* 16px / 16px */
 }
 
 .desenvolvimento {
     font-family: var(--font-secundaria);
     font-weight: 400;
-    font-size: 20px;
+    font-size: 1.25rem; /* 20px / 16px */
     color: #2B2B2B;
-    line-height: 28px;
+    line-height: 1.75rem; /* 28px / 16px */
 }
 
 .Produtos__home {
@@ -142,6 +143,7 @@
     font-size: 16px;
     font-weight: bold;
 }
+
 .sobre_textotopico_link__produtos {
     margin-top: 3em;
 }
@@ -151,35 +153,38 @@
     display: flex;
     background-color: var(--cor-secundaria);
     justify-content: center;
-    padding: 5em;
+    padding: 5em; /* Considerando que 1em é igual a 16px, 5em = 5 * 16px = 80px */
     text-decoration: none;
 }
+
 .Sobre__conteudo {
     align-items: center;
     flex-direction: column;
-    margin: 1em 10em 1em 5em;
+    margin: 1em 10em 1em 5em; /* 1em = 16px, 10em = 160px, 5em = 80px */
 }
+
 .Sobre__texto {
     font-family: var(--font-primaria);
     font-weight: 700;
-    font-size: 30px;
+    font-size: 1.875rem; /* 30px / 16 = 1.875rem */
 }
+
 .sobre_texto_topicos {
-    padding: 3em;
+    padding: 3em; /* 3 * 16px = 48px = 3rem */
 }
 .sobre_textotopicos_paragrafo {
     font-weight: 400;
     font-family: var(--font-primaria);
-    font-size: 20px;
+    font-size: 1.25rem; /* 20px */
     padding: 1em;
 }
 .sobre__texto__lista {
     text-decoration: none;
     display: flex;
 }
-.sobre__texto__lista__imagem{
+.sobre__texto__lista__imagem {
     object-fit: contain;
-    width: 32px;
+    width: 2rem; /* 32px */
     height: auto;
 }
 .sobretextotopicosparagrafo_ultimo {
@@ -196,28 +201,28 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    transition: background-color 0.3s ease, transform 0.3s ease; /* Adicionando transição de fundo e transformação */
+    transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
 .sobre_textotopico_link__sobre:hover {
-    background-color: var(--cor-primaria); /* Mudando a cor de fundo quando o botão é hover */
-    transform: scale(1.1); /* Efeito de aumento de tamanho */
+    background-color: var(--cor-primaria);
+    transform: scale(1.1);
     color: var(--cor-secundaria);
 }
 
 .sobre_textotopico_link__sobre:hover .icone__rede {
-    transform: translateX(5px);
-    filter: brightness(0) saturate(100%) invert(76%) sepia(4%) saturate(673%) hue-rotate(170deg) brightness(94%) contrast(87%); /* Cor aproximada #e2dcde */
-    transition: transform 0.3s ease, filter 0.3s ease; /* Suavizando a transição */
+    transform: translateX(0.3125rem); /* 5px */
+    filter: brightness(0) saturate(100%) invert(76%) sepia(4%) saturate(673%) hue-rotate(170deg) brightness(94%) contrast(87%);
+    transition: transform 0.3s ease, filter 0.3s ease;
 }
 .sobre_textotopico_link__produtos:hover {
-    background-color: var(--cor-secundaria); /* Cor de fundo quando hover */
-    color: var(--cor-primaria); /* Cor do texto quando hover */
-    transform: scale(1.1); /* Efeito de aumento de tamanho */
+    background-color: var(--cor-secundaria);
+    color: var(--cor-primaria);
+    transform: scale(1.1);
 }
 
 .icone__rede {
-    transition: transform 0.3s ease; /* Adicionando uma transição suave para o ícone */
+    transition: transform 0.3s ease;
 }
 .sobre_textotopico_link__sobre {
     margin-right: 36em;
@@ -235,11 +240,11 @@
     text-align: center;
     display: flex;
     flex-direction: column;
-    align-items: center; /* Alinha ao centro */
-    padding: 2rem 12rem; /* Reduz o padding horizontal */
+    align-items: center;
+    padding: 2rem 12rem; /* 2rem (32px) e 12rem (192px) */
 }
 .contato__bloco__texto {
-    font-size: 30px;
+    font-size: 1.875rem; /* 30px */
     font-family: var(--font-primaria);
     font-weight: 900;
     color: var(--cor-primaria);
@@ -254,26 +259,25 @@
     padding: 0 0 3em 0;
 }
 .contato__bloco__texto__redes {
-    margin:  1em 5em;
+    margin: 1em 5em;
     padding: 1em 5em;
     border-radius: 30px;
     background-color: var(--cor-primaria);
     display: flex;
     justify-content: center;
-    width: 100px;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.8);
+    width: 6.25rem; /* 100px */
+    box-shadow: 0px 0.25rem 0.375rem rgba(0, 0, 0, 0.8); /* 4px 6px */
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 .contato__bloco__texto__redes:hover {
-    transform: translateY(-8px); 
-    box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.12);
+    transform: translateY(-0.5rem); /* 8px */
+    box-shadow: 0px 0.5rem 0.75rem rgba(0, 0, 0, 0.12); /* 8px 12px */
 }
 .contato__bloco__texto__redes__paragrafo {
     font-family: var(--font-secundaria);
     text-decoration: none;
     color: var(--cor-secundaria);
-    font-size: 24px;
-    
+    font-size: 1.5rem; /* 24px */
 }
 .footer {
     background-color: var(--cor-footer);
@@ -281,15 +285,15 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 30px;
-    font-size: 16px; /* Tamanho maior da fonte */
-    font-family: var(--font-primaria);
+    padding: 1.25rem 1.875rem; /* 20px 30px */
+    font-size: 1rem; /* 16px */
+    font-family: var(fon);
 }
 
 .footer__left {
     flex: 1;
     text-align: left;
-    font-size: 16px; /* Garantindo tamanho maior */
+    font-size: 1rem; /* 16px */
     margin-left: 10em;
 }
 
@@ -303,20 +307,19 @@
     margin: 0;
     padding: 0;
     display: flex;
-    gap: 20px; /* Espaço maior entre os itens */
+    gap: 1.25rem; /* 20px */
 }
 
 .footer__link {
     color: var(--cor-link);
     text-decoration: none;
-    font-size: 16px; /* Aumentando tamanho dos links */
+    font-size: 1rem; /* 16px */
 }
 
 .footer__link:hover {
     color: var(--cor-link-hover);
     text-decoration: underline;
 }
-
 
 
 
