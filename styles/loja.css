@@ -35,6 +35,17 @@
     background-color: var(--cor-terciaria);
     padding: 1em;
     border-radius: 16px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3); /* Sombra inicial */
+    display: inline-block; /* Garante que o botão seja tratado como um bloco para animação */
+    transition: all 0.3s ease; /* Transição suave para todas as mudanças */
+}
+
+/* Efeito de hover */
+.loja__botão:hover {
+    background-color: var(--cor-primaria);
+    color: var(--cor-secundaria); /* Mudança de cor no hover */
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.4); /* Sombra mais forte no hover */
+    transform: translateY(-10px); /* Animação de elevação (subir) */
 }
 .loja__imagem {
     max-width: 90%;

@@ -10,6 +10,11 @@
     --cor-primaria: #14182f;
     --cor-secundaria: #e2dcde;
     --cor-terciaria: #0cbccc;
+    --cor-footer: #121212; /* Fundo escuro */
+    --cor-texto: #ffffff; /* Cor do texto */
+    --cor-link: #9c9c9c; /* Cor dos links */
+    --cor-link-hover: #ffffff; /* Cor dos links ao passar o mouse */
+
 
     --font-primaria: 'Comfortaa', sans-serif;
     --font-secundaria: 'Inter', sans-serif;

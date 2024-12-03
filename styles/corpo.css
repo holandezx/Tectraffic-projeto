@@ -1,13 +1,13 @@
 .section {
-    background-image: linear-gradient(to bottom, var(--cor-primaria) 70%, var(--cor-secundaria)0%);
+    background-image: linear-gradient(to bottom, var(--cor-primaria) 70%, var(--cor-secundaria) 30%);
 }
 
 .corpo {
     background-image: url(../img/backgroundcorpo.png);
     background-repeat: no-repeat;
     color: var(--cor-secundaria);
-    margin: 0 13.125rem;
-    padding: 0 0 9.375rem;
+    margin: 0 210px;
+    padding: 0 0 150px;
 }
 
 .Logo {
@@ -18,28 +18,36 @@
     font-family: var(--font-primaria);
     font-weight: 700;
     font-size: 50px;
-    padding: 8.313rem 45rem 3.938rem 5rem;
+    padding: 133px 720px 63px 80px;
 }
 
 .paragrafo {
     font-weight: 400;
     font-family: var(--font-primaria);
     font-size: 18px;
-    margin: 3.938rem 57.5rem 3.438rem 5.625rem;
+    margin: 63px 920px 55px 90px;
 }
 
 .botao__corpo {
     text-decoration: none;
     font-family: var(--font-primaria);
     font-weight: 700;
-    font-size: 14px;
+    font-size: 20px;
     color: var(--cor-secundaria);
-    margin: 3.438rem 72.75rem 14.438rem 5rem;
+    margin: 55px 1000px 231px 80px;
     padding: 1em;
     background-color: var(--cor-terciaria);
     border-radius: 30px;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /* Sombra sutil */
 }
 
+.botao__corpo:hover {
+    background-color: var(--cor-primaria);
+    transform: scale(1.1);
+    color: #fff;
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.5); /* Sombra mais forte ao passar o mouse */
+}
 .avaliações {
     background-color: var(--cor-secundaria);
 }
@@ -47,7 +55,7 @@
 .avaliações__lista {
     display: flex;
     text-align: center;
-    padding: 5rem 12.5rem;
+    padding: 80px 200px;
     list-style: none;
 }
 
@@ -57,7 +65,7 @@
 
 .imagem-sobre {
     width: 100%;
-    height: 4.688rem;
+    height: 75px;
     object-fit: cover;
 }
 
@@ -66,7 +74,7 @@
     font-weight: 700;
     font-size: 25px;
     color: var(--cor-primaria);
-    margin: 1rem;
+    margin: 16px;
 }
 
 .desenvolvimento {
@@ -74,7 +82,7 @@
     font-weight: 400;
     font-size: 20px;
     color: #2B2B2B;
-    line-height: 1.75rem;
+    line-height: 28px;
 }
 
 .Produtos__home {
@@ -82,7 +90,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 3.125rem 1.25rem;
+    padding: 50px 20px;
 }
 
 .Produtos_home_titulo {
@@ -91,7 +99,7 @@
     font-weight: 700;
     font-size: 25px;
     text-align: center;
-    margin-bottom: 1.25rem;
+    margin-bottom: 20px;
     width: 100%;
     margin: 0 0 3em 0;
 }
@@ -99,7 +107,7 @@
 .Produtos_home_container {
     display: flex;
     flex-wrap: wrap;
-    gap: 1.25rem;
+    gap: 20px;
     justify-content: center;
     width: 100%;
 }
@@ -110,7 +118,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    max-width: 12,5rem;
+    max-width: 200px;
     transition: transform 0.3s ease;
 }
 
@@ -130,9 +138,12 @@
     font-family: var(--font-primaria);
     color: var(--cor-secundaria);
     text-align: center;
-    margin-top: 0.625rem;
+    margin-top: 10px;
     font-size: 16px;
     font-weight: bold;
+}
+.sobre_textotopico_link__produtos {
+    margin-top: 3em;
 }
 
 .Sobre {
@@ -162,6 +173,15 @@
     font-size: 20px;
     padding: 1em;
 }
+.sobre__texto__lista {
+    text-decoration: none;
+    display: flex;
+}
+.sobre__texto__lista__imagem{
+    object-fit: contain;
+    width: 32px;
+    height: auto;
+}
 .sobretextotopicosparagrafo_ultimo {
     padding: 0 0 1em 0;
 }
@@ -173,20 +193,129 @@
     padding: 1em;
     border-radius: 30px;
     color: var(--cor-primaria);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Adicionando transição de fundo e transformação */
+}
+
+.sobre_textotopico_link__sobre:hover {
+    background-color: var(--cor-primaria); /* Mudando a cor de fundo quando o botão é hover */
+    transform: scale(1.1); /* Efeito de aumento de tamanho */
+    color: var(--cor-secundaria);
+}
+
+.sobre_textotopico_link__sobre:hover .icone__rede {
+    transform: translateX(5px);
+    filter: brightness(0) saturate(100%) invert(76%) sepia(4%) saturate(673%) hue-rotate(170deg) brightness(94%) contrast(87%); /* Cor aproximada #e2dcde */
+    transition: transform 0.3s ease, filter 0.3s ease; /* Suavizando a transição */
+}
+.sobre_textotopico_link__produtos:hover {
+    background-color: var(--cor-secundaria); /* Cor de fundo quando hover */
+    color: var(--cor-primaria); /* Cor do texto quando hover */
+    transform: scale(1.1); /* Efeito de aumento de tamanho */
+}
+
+.icone__rede {
+    transition: transform 0.3s ease; /* Adicionando uma transição suave para o ícone */
+}
+.sobre_textotopico_link__sobre {
+    margin-right: 36em;
 }
 .imagem_sobre_home {
     max-width: 40%;
 }
+.contato {
+    background-image: linear-gradient(to bottom, var(--cor-secundaria) 40%, var(--cor-footer) 40%);
+    display: flex;
+    justify-content: center;
+}
+.contato__bloco {
+    background-color: var(--cor-terciaria);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Alinha ao centro */
+    padding: 2rem 12rem; /* Reduz o padding horizontal */
+}
+.contato__bloco__texto {
+    font-size: 30px;
+    font-family: var(--font-primaria);
+    font-weight: 900;
+    color: var(--cor-primaria);
+    margin: 0 0 2em 0;
+    padding: 0.5em;
+    border-radius: 100px;
+}
+.contato__bloco__texto__linha {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 0 0 3em 0;
+}
+.contato__bloco__texto__redes {
+    margin:  1em 5em;
+    padding: 1em 5em;
+    border-radius: 30px;
+    background-color: var(--cor-primaria);
+    display: flex;
+    justify-content: center;
+    width: 100px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.8);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.contato__bloco__texto__redes:hover {
+    transform: translateY(-8px); 
+    box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.12);
+}
+.contato__bloco__texto__redes__paragrafo {
+    font-family: var(--font-secundaria);
+    text-decoration: none;
+    color: var(--cor-secundaria);
+    font-size: 24px;
+    
+}
 .footer {
-	background-color: #333;
-	color: #fff;
-	padding: 1.25rem;
-	text-align: center;
+    background-color: var(--cor-footer);
+    color: var(--cor-texto);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 30px;
+    font-size: 16px; /* Tamanho maior da fonte */
+    font-family: var(--font-primaria);
 }
 
+.footer__left {
+    flex: 1;
+    text-align: left;
+    font-size: 16px; /* Garantindo tamanho maior */
+    margin-left: 10em;
+}
 
+.footer__right {
+    text-align: right;
+    margin-right: 10em;
+}
 
+.footer__menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 20px; /* Espaço maior entre os itens */
+}
 
+.footer__link {
+    color: var(--cor-link);
+    text-decoration: none;
+    font-size: 16px; /* Aumentando tamanho dos links */
+}
+
+.footer__link:hover {
+    color: var(--cor-link-hover);
+    text-decoration: underline;
+}
 
 
 

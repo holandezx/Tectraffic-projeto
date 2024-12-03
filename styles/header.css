@@ -18,13 +18,19 @@
     
 }
 .lista-menu__item {
-    margin: 0 2em;
+    margin: 0 4em;
 }
 .lista-menu__link {
     color: var(--cor-secundaria);
     font-family: var(--font-secundaria);
     text-decoration: none;
     font-weight: 600;
+    font-size: 20px;
+    transition: color 0.3s ease; /* Transição suave para a mudança de cor */
+}
+
+.lista-menu__link:hover {
+    color: var(--cor-terciaria); /* Cor ao passar o mouse */
 }
 .Produtos {
     display: none;
@@ -50,14 +56,25 @@
     
 }
 .Atendimento {
+    list-style: none;
+    margin: 0;
+    padding: 0
+}
+
+.Atendimento__texto {
+    display: block;
     background-color: var(--cor-terciaria);
     padding: 1em;
     border-radius: 30px;
     color: var(--cor-primaria);
-}
-.Atendimento__texto {
     text-decoration: none;
-    color: var(--cor-primaria);
     font-family: var(--font-secundaria);
     font-weight: 600;
+    text-align: center;
+    transition: background-color 0.3s ease;
+}
+
+.Atendimento__texto:hover {
+    background-color: 	#25D366;
+    color: white;
 }
